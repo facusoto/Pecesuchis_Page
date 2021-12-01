@@ -110,16 +110,23 @@ img {
     width: 100%;
     height: 100px;
     display: flex;
-    justify-content: start;
     margin: 20px 0;
+    border-radius: 10px;
+    justify-content: start;
+    transition: .2s ease;
+}
+
+.product-category:hover {
+    border-right: 10px solid #015d7b;
+    transition: .2s ease;
 }
 
 .category-photo-container {
     border-radius: 50%;
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     background: #fff;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 .category-photo {
@@ -142,8 +149,8 @@ img {
     display: inherit;
     justify-content: space-between;
     align-items: center;
-    padding: 0 25px;
-    margin: 10px 0;
+    padding: 0 20px;
+    margin: 7px 0;
 }
 
 .dropdown-section-name {
@@ -171,9 +178,9 @@ img {
 }
 
 .product-category-right {
-    display: inherit;
-    flex-direction: column;
+    height: 100%;
     width: 70%;
+    position: relative;
 }
 
 .fa-3x {
@@ -209,11 +216,15 @@ img {
     border-radius: 5px;
     color: #987979;
     white-space: pre;
+    position: absolute;
+    top: 0;
 }
 
 .more-selector {
     flex-direction: column;
     z-index: 2;
+    position: absolute;
+    bottom: -15px;
 }
 
 .more-selector > span {
